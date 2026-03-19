@@ -33,7 +33,7 @@ function App() {
         try {
             setIsLoading(true);
             const data = await taskService.fetchAllTasks(selectedStatus);
-            setTasks(sortTasks(data));
+            setTasks(sortTasks(data));  // Apply client-side sort after fetch
             setErrorMessage(null);
         } catch (error) {
             setErrorMessage('Unable to load tasks. Please try again.');
