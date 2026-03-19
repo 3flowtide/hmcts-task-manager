@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/api/tasks';
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080/api/tasks';
 
 // Fetch tasks with optional status filter
 export const fetchAllTasks = async (status) => {
