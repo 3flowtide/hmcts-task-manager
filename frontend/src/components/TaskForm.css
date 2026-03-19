@@ -1,0 +1,131 @@
+.form-container {
+    background: white;
+    border: 1px solid #b1b4b6;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.form-header {
+    background: #f3f2f1;
+    padding: 20px 30px;
+    border-bottom: 1px solid #b1b4b6;
+}
+
+.form-header h2 {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0b0c0c;
+}
+
+.form-header p {
+    margin: 0;
+    color: #505a5f;
+    font-size: 16px;
+}
+
+.task-form {
+    padding: 30px;
+}
+
+.form-row {
+    margin-bottom: 25px;
+}
+
+.form-row.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0b0c0c;
+    font-size: 16px;
+}
+
+.required {
+    color: #d4351c;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+    padding: 8px 10px;
+    border: 2px solid #0b0c0c;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+    outline: 3px solid #ffdd00;
+    outline-offset: 0;
+}
+
+.form-field input.input-error,
+.form-field textarea.input-error {
+    border-color: #d4351c;
+}
+
+.error-text {
+    color: #d4351c;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-actions {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #b1b4b6;
+    display: flex;
+    gap: 12px;
+}
+
+.btn-submit {
+    background: #00703c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-submit:hover {
+    background: #005a30;
+}
+
+.btn-submit:active {
+    top: 2px;
+}
+
+.btn-cancel {
+    background: #f3f2f1;
+    color: #0b0c0c;
+    border: 2px solid #0b0c0c;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-cancel:hover {
+    background: #e5e5e5;
+}
+
+@media (max-width: 768px) {
+    .form-row.split {
+        grid-template-columns: 1fr;
+    }
+}
