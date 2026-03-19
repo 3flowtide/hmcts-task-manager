@@ -2,6 +2,12 @@
 
 Task management system for HMCTS caseworkers.
 
+## Live Links
+
+- Frontend: https://hmcts-task-manager-psi.vercel.app
+- Backend API: https://hmcts-task-manager.onrender.com/api/tasks
+- Health check: https://hmcts-task-manager.onrender.com/health
+
 ## Stack
 
 Backend: Java 17, Spring Boot 3.5.0, Spring Data JPA, H2
@@ -121,4 +127,3 @@ hmcts-task-manager/
 - PostgreSQL for production
 - Audit logging
 - Email notifications
-
