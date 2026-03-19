@@ -14,7 +14,10 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/tasks")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(
+    origins = {"http://localhost:3000"},
+    originPatterns = {"https://*.vercel.app"}
+)
 public class TaskController {
 
     private final TaskService taskService;
