@@ -1,0 +1,243 @@
+.table-container {
+    background: white;
+    border: 1px solid #b1b4b6;
+    overflow-x: auto;
+}
+
+.table-header {
+    background: #f3f2f1;
+    padding: 20px 30px;
+    border-bottom: 1px solid #b1b4b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0b0c0c;
+}
+
+.task-count {
+    background: #1d70b8;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.empty-state {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.empty-state p {
+    margin: 0 0 10px 0;
+    color: #505a5f;
+    font-size: 18px;
+}
+
+.empty-hint {
+    font-size: 14px !important;
+    color: #626a6e;
+}
+
+.task-table {
+    width: 100%;
+    min-width: 1080px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.task-table thead {
+    background: #f3f2f1;
+}
+
+.task-table th {
+    text-align: left;
+    padding: 15px 20px;
+    font-weight: 700;
+    color: #0b0c0c;
+    font-size: 16px;
+    border-bottom: 2px solid #0b0c0c;
+}
+
+.task-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #b1b4b6;
+    vertical-align: middle;
+}
+
+.task-table th:nth-child(1),
+.task-table td:nth-child(1) {
+    width: 22%;
+}
+
+.task-table th:nth-child(2),
+.task-table td:nth-child(2) {
+    width: 28%;
+}
+
+.task-table th:nth-child(3),
+.task-table td:nth-child(3) {
+    width: 16%;
+}
+
+.task-table th:nth-child(4),
+.task-table td:nth-child(4) {
+    width: 14%;
+}
+
+.task-table th:nth-child(5),
+.task-table td:nth-child(5) {
+    width: 20%;
+}
+
+.task-table tbody tr:hover {
+    background: #f8f8f8;
+}
+
+.row-selected {
+    background: #edf4fa;
+}
+
+.title-cell {
+    font-weight: 600;
+    color: #0b0c0c;
+    min-width: 0;
+}
+
+.description-cell {
+    color: #505a5f;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no-data {
+    color: #b1b4b6;
+    font-style: italic;
+}
+
+.date-cell {
+    font-family: 'Courier New', monospace;
+    color: #0b0c0c;
+    white-space: nowrap;
+}
+
+.status-select {
+    padding: 6px 12px;
+    border: 2px solid;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.status-select:focus {
+    outline: 3px solid #ffdd00;
+    outline-offset: 0;
+}
+
+.badge-pending {
+    background: #fff4e5;
+    border-color: #f47738;
+    color: #f47738;
+}
+
+.badge-progress {
+    background: #d2e7f7;
+    border-color: #1d70b8;
+    color: #1d70b8;
+}
+
+.badge-completed {
+    background: #d5e8e0;
+    border-color: #00703c;
+    color: #00703c;
+}
+
+.btn-delete {
+    background: #d4351c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-delete:hover {
+    background: #b02a12;
+}
+
+.btn-delete:active {
+    top: 2px;
+}
+
+.btn-view,
+.btn-edit {
+    border: 1px solid #1d70b8;
+    background: #1d70b8;
+    color: white;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background: #00703c;
+    border-color: #00703c;
+}
+
+.btn-view:hover {
+    background: #165a91;
+}
+
+.btn-edit:hover {
+    background: #005a30;
+}
+
+.link-button {
+    border: none;
+    background: none;
+    color: #1d70b8;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0;
+    display: block;
+    max-width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.actions-cell {
+    white-space: nowrap;
+}
+
+.actions-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 1024px) {
+    .task-table {
+        font-size: 14px;
+    }
+
+    .task-table th,
+    .task-table td {
+        padding: 10px;
+    }
+}
