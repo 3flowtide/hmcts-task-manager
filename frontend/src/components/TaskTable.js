@@ -70,6 +70,7 @@ function TaskTable({ tasks, onStatusChange, onDelete, onEdit, onView, selectedTa
                                     value={task.status}
                                     onChange={(e) => onStatusChange(task.id, e.target.value)}
                                     className={`status-select ${getStatusBadge(task.status)}`}
+                                    aria-label={`Update status for ${task.title}`}
                                 >
                                     <option value="PENDING">Pending</option>
                                     <option value="IN_PROGRESS">In Progress</option>
