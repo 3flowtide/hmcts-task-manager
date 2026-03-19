@@ -116,7 +116,7 @@ function TaskForm({ onSubmit, initialData, mode = 'create', onCancel }) {
                             value={formData.description}
                             onChange={handleInputChange}
                             rows="4"
-                            placeholder="Provide additional details about the task"
+                            placeholder="Additional task details (optional)"
                         />
                     </div>
                 </div>
