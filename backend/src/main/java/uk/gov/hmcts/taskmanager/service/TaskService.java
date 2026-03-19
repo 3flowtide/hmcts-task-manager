@@ -21,8 +21,8 @@ public class TaskService {
 
     public Task createTask(TaskDTO dto) {
         Task task = new Task(
-            dto.getTitle(),
-            dto.getDescription(),
+            dto.getTitle().trim(),
+            dto.getDescription() != null ? dto.getDescription().trim() : null,
             dto.getStatus(),
             dto.getDueDate()
         );
